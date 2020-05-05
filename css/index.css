@@ -29,6 +29,18 @@ body {
   margin: 0 auto;
 }
 
+.imagebox {
+  display: flex;
+  flex-flow: wrap;
+  margin-left: -8px; /* Adjustment for the gutter */
+  width: 100%;
+}
+
+.imagebox img {
+  width: 450px;
+  margin: 0 8px 8px 0;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -62,7 +74,7 @@ header {
 }
 .titleheader {
   font-size: 18vw;
-  margin: 40px auto 0;
+  margin: 80px auto 0;
   text-transform: lowercase;
   letter-spacing: -2vw;
   line-height: 12vw;

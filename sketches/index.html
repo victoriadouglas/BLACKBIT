@@ -1,0 +1,36 @@
+---
+title: sketches
+logo: emojiskull
+description: oh just doodlin'
+layout: layouts/home.njk
+eleventyNavigation:
+  key: sketches
+  order: 3
+
+images:
+    - 1.jpg
+    - 2.jpg
+    - 3.jpg
+    - 4.jpg
+    - 5.jpg
+    - 1.jpg
+    - 2.jpg
+    - 3.jpg
+    - 4.jpg
+    - 5.jpg
+    - 1.jpg
+    - 2.jpg
+    - 3.jpg
+    - 4.jpg
+    - 5.jpg
+    - 1.jpg
+    - 2.jpg
+    - 3.jpg
+    - 4.jpg
+    - 5.jpg
+---
+
+<div class="imagebox">
+{% for filename in images %}<img src="/img/sketches/{{ filename }}"/>{% endfor %}
+</div>
+<h1>wowo that's a good spaghetti</h1>
