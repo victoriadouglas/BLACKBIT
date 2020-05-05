@@ -14,7 +14,9 @@
 {% include "header.njk" %}
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <div class="container">
       {{ content | safe }}
+      </div>
     </main>
 
     <footer></footer>
