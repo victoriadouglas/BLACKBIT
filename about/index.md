@@ -8,11 +8,11 @@ eleventyNavigation:
   order: 3
 ---
 
-<div class="container">
-<img src="/img/pfpditherbanner.png"/>
-</div>
-<div class="container" style="display: grid;grid-template-columns: .45fr .5fr;justify-content: space-between">
-<div>
+<div class="container cont-about" style="display: grid; justify-content: space-between">
+
+<img style="grid-area: banner;max-width:90vw;padding-bottom:10px;" src="/img/pfpditherbanner.png"/>
+
+<div style="grid-area: bio; margin-bottom:50px; max-width:90vw;padding-right:20px;">
 
 # I am a non-binary illustrator from Columbus, Ohio.
 
@@ -39,5 +39,7 @@ When I’m not working on the next big thing in the studio, or slaying kendama, 
 Carpe Diem. Let’s go smash some dinnerplates to pieces together.
 
 </div>
-<img src="/img/pfpdither.png" style="width:100%"/>
+
+<img style="grid-area: pfp;max-width:90vw;" src="/img/pfpdither.png" style="width:100%"/>
+
 </div>
