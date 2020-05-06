@@ -39,6 +39,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("yml");
 
   // Next/Previous
   eleventyConfig.addCollection("posts", function (collection) {
