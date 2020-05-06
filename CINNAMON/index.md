@@ -1,10 +1,9 @@
 ---
-layout: layouts/home.njk
-title: About
-logo: emoji
+layout: layouts/cinnamon.njk
+title: Cinnamon
 eleventyNavigation:
-  key: About
-  order: 3
+  key: cinnamon
+  order: 6
 ---
 
 <div class="container cont-about" style="display: grid; justify-content: space-between">

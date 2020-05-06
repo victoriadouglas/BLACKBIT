@@ -20,7 +20,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: var(--darkgray);
-  background-color: var(--lime);
+  background-color: var(--lime) ;
 }
 
 .container {
@@ -54,6 +54,7 @@ body {
 .imagebox img {
   width: 450px;
   margin: 0 8px 8px 0;
+  max-width: 95vw;
 }
 
 p:last-child {
@@ -62,7 +63,7 @@ p:last-child {
 p,
 .tmpl-post li,
 img {
-  max-width: 37.5em; /* 600px /16 */
+  /*max-width: 37.5em;  600px /16 */
 }
 p,
 .tmpl-post li {
@@ -75,7 +76,7 @@ a[href]:visited {
   color: var(--navy);
 }
 main {
-  padding: 1rem;
+  /*padding: 1rem;*/
 }
 main :first-child {
   margin-top: 0;
@@ -88,11 +89,11 @@ header {
   width: 100%;
 }
 .titleheader {
-  font-size: 18vw;
-  margin: 160px auto 0;
+  font-size: 8vw;
+  margin: 0 auto;
   text-transform: lowercase;
-  letter-spacing: -2vw;
-  line-height: 12vw;
+  letter-spacing: -0.5vw;
+  line-height: auto;
 }
 
 .titleheader::first-letter {
@@ -105,6 +106,22 @@ header {
   font-style: italic;
   font-size: 16px;
   margin: 0;
+}
+
+.comicpage {
+  width: 100%;
+  max-width: 95vw;
+  margin-bottom: 20px;`
+}
+
+.journalbackdrop {
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.whitefill {
+  background-color: rgb(255, 255, 255, 0.9);
 }
 
 .navbar {

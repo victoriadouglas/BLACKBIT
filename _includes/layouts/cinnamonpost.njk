@@ -1,0 +1,53 @@
+---
+layout: layouts/cinnamon.njk
+titlesize: small
+---
+
+
+{% set postslist = collections.cinnamon | head(-3) %}
+{% set postslistCounter = collections.cinnamon | length %}
+{% include "comicsarchive.njk" %}
+
+<nav aria-labelledby="my-pagination">
+  <h2 id="my-pagination">This is my Pagination</h2>
+  <ol>
+
+    <li>{% if page.url != collections.cinnamon.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}First{% endif %}</li>
+
+{%- for posts in collections.cinnamon %}
+    <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>
+{%- endfor %}
+
+    <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}Last{% endif %}</li>
+
+  </ol>
+</nav>
+
+<a href="{{ collections.cinnamon.previous }}">THIS GOES FORWARD ONE PAGE</a>
+
+{% if nextPost.url %}
+    <p class="ctr">
+      <strong>Next</strong>: 
+      <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+    </p>
+  {% endif %}
+  {% if prevPost.url %}
+    <p class="ctr">
+      <strong>Previous</strong>: 
+      <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+    </p>
+  {% endif %}
+
+
+{% include "comicnav.njk" %}
+<img class="comicpage" src="/img/cinnamon/{{ chapter }}-{{ pagenumber }}.png"/>
+
+<div class="journalbackdrop whitefill">
+<div style="display:flex;align-items: center;justify-content:space-between;">
+<h2 style="margin:0;">{{ title }} {{ chapter }}-{{ pagenumber }}</h2>
+<time class="postlist-date" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+</div>
+{{ content | safe }}
+</div>
+
+<div style="height:200px;"></div>
