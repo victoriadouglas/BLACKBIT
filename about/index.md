@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: About
+logo: emoji
 templateClass: tmpl-post
 eleventyNavigation:
   key: About
