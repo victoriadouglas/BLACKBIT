@@ -9,8 +9,8 @@ media_folder: "img/uploads" # Media files will be stored in the repo under image
 
 collections:
   # CINNAMON
-  - name: "cinnamon" # Used in routes, e.g., /admin/collections/blog
-    label: "Comic" # Used in the UI
+  - name: "boop" # Used in routes, e.g., /admin/collections/blog
+    label: "Comic Depracated" # Used in the UI
     folder: "COMICS" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -24,6 +24,22 @@ collections:
           default: ["cinnamon, protag, roboto"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  # JSON Comics
+  - name: "cinnamon"
+  label: "Cinnamon" # Used in the UI
+  extension: "json"
+  files:
+    - file: "data/cinnamon.json"
+      label: "cinnamon"
+      name: "cinnamon"
+
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "chapter", name: "chapter", widget: "string" }
+        - { label: "pagenumber", name: "pagenumber", widget: "string" }
+        - { name: "body", label: "Body", widget: markdown }
+
 
   # Our pages e.g. About
   - name: "pages"
