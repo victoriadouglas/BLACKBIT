@@ -27,19 +27,17 @@ collections:
 
   # JSON Comics
   - name: "cinnamon"
-  label: "Cinnamon" # Used in the UI
-  extension: "json"
-  files:
-    - file: "data/cinnamon.json"
-      label: "cinnamon"
-      name: "cinnamon"
-
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "chapter", name: "chapter", widget: "string" }
-        - { label: "pagenumber", name: "pagenumber", widget: "string" }
-        - { name: "body", label: "Body", widget: markdown }
-
+    label: "Cinnamon" # Used in the UI
+    extension: "json"
+    files:
+      - file: "data/cinnamon.json"
+      - label: "cinnamon"
+      - name: "cinnamon"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "chapter", name: "chapter", widget: "string" }
+      - { label: "pagenumber", name: "pagenumber", widget: "string" }
+      - { name: "body", label: "Body", widget: markdown }
 
   # Our pages e.g. About
   - name: "pages"
