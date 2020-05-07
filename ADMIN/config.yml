@@ -26,18 +26,17 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
 
   # JSON Comics
-  - name: "cinnamon"
-    label: "Cinnamon" # Used in the UI
-    extension: "json"
+  - name: "comics"
+    label: "comics" # Used in the UI
     files:
-      - file: "data/cinnamon.json"
-      - label: "cinnamon"
-      - name: "cinnamon"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "chapter", name: "chapter", widget: "string" }
-      - { label: "pagenumber", name: "pagenumber", widget: "string" }
-      - { name: "body", label: "Body", widget: markdown }
+      - label: "Cinnamon"
+        name: "Cinnamon"
+        file: "site/data/cinnamon.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "chapter", name: "chapter", widget: "string" }
+          - { label: "pagenumber", name: "pagenumber", widget: "string" }
+          - { name: "body", label: "Body", widget: markdown }
 
   # Our pages e.g. About
   - name: "pages"
