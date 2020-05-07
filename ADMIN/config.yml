@@ -31,7 +31,7 @@ collections:
     files:
       - label: "Cinnamon"
         name: "Cinnamon"
-        file: "data/cinnamon.json"
+        file: "_data/cinnamon.json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "chapter", name: "chapter", widget: "string" }
